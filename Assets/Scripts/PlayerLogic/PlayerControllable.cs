@@ -12,6 +12,7 @@ namespace PlayerLogic
     {
         [Header("Movement")]
         public Vector3 movement;
+        public float jumpStrength;
         public bool jump;
 
         [Header("Rotation")]

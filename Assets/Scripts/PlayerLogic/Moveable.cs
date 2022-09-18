@@ -87,7 +87,7 @@ namespace PlayerLogic
             {
                 Vector3 jumpMotion = player.transform.up;
                 jumpMotion *= jumpable.Jump();
-                player.rigidbody.AddForce(jumpMotion); // There's no Time.deltaTime, because it's a single force push
+                player.rigidbody.AddForce(jumpMotion * player.playerControllable.jumpStrength); // There's no Time.deltaTime, because it's a single force push
             }
         }
 
